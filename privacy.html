@@ -9,7 +9,7 @@
 <body>
 
 <h1>NetShare Privacy Policy</h1>
-<p class="meta"><strong>App:</strong> NetShare (<code>au.event.netshare</code>) &middot; <strong>Developer:</strong> [DEVELOPER NAME] &middot; <strong>Last updated:</strong> 2026-10-22</p>
+<p class="meta"><strong>App:</strong> NetShare (<code>au.event.netshare</code>) &middot; <strong>Developer:</strong> sgateori &middot; <strong>Last updated:</strong> 2026-10-22</p>
 
 <p>NetShare runs the open-source copyparty file server on your phone and lets you send files to other people with a link. The files are served from your phone. There is no NetShare server, no NetShare account and no ads. The developer does not receive, store or see the files you share. This page says what stays on your phone, what leaves it, and who can see it.</p>
 
@@ -33,8 +33,7 @@
 
 <h2>Crash reports and anonymous usage (Firebase)</h2>
 <p>This is <strong>off by default</strong>. On first launch the app asks &quot;Help improve NetShare?&quot; and you must choose Allow or No thanks. Nothing is sent until you choose Allow. You can change your choice at any time in Settings, Privacy. If you decline or switch it off, queued crash reports are deleted. Collection is also always off in debug builds.</p>
-<p>If you allow it, the app uses Google Firebase Crashlytics and Firebase Analytics. Google acts as a service provider processing this data for us.</p> <!-- OPEN: Play Data safety "Shared: No" (Firebase as service provider) vs "Shared: Yes (analytics)" is undecided by the owner; wording here matches the sheet's proposal (not shared, provider only). -->
-<table>
+<p>If you allow it, the app uses Google Firebase Crashlytics and Firebase Analytics. Google acts as a service provider processing this data for us.</p> <table>
 <tr><th>Data</th><th>Purpose</th></tr>
 <tr><td>Crash reports and error reports: the stack trace and, for handled problems, only where it happened and the kind of error (for example when the embedded Python runtime, the server, the tunnel program or sharing failed; for the tunnel program only its exit code, never its output)</td><td>Find and fix bugs</td></tr>
 <tr><td>App state attached to reports: which tab was open, build type, Android language, whether it was installed from Google Play, low-memory device, battery saver on, battery-optimisation exemption state, whether the embedded Python runtime and the tunnel were up, and connection type (Wi-Fi, mobile, VPN or none; never the network name)</td><td>Reproduce crashes</td></tr>
@@ -42,20 +41,16 @@
 <tr><td>Firebase's own automatic events (such as first open and sessions), device model and Android version, and identifiers Firebase creates for the install (an installation ID and an app-instance ID)</td><td>Standard analytics</td></tr>
 </table>
 <p>The app does not send share links, tunnel addresses, recipient names, file names, passwords, the Cloudflare tunnel token or IP addresses in these reports, and it does not use the advertising ID.</p>
-<p><strong>Limit:</strong> if the app crashes with an uncaught error, the error text written by the system or a library is sent as it is. The app removes the message from the handled problems it reports itself, but not from uncaught crashes. In rare cases such text, for example from the embedded Python runtime, might include a file path or the name of a shared file. This only applies after you have allowed collection.</p> <!-- OPEN: uncaught-crash text is not redacted in the app (sheet open point 3.2); wording is deliberately softened. Update if the app is fixed or the owner prefers other wording. -->
-<p>Google may see your phone's IP address when the upload happens and may derive an approximate country or region from it. The app itself never reads your location.</p> <!-- OPEN: whether to declare Approximate location (derived from IP by Analytics) in Play Data safety is undecided; the policy discloses it either way. -->
-<p>Data is sent over HTTPS. Retention is set by Google's defaults for Firebase. See <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p><strong>Limit:</strong> if the app crashes with an uncaught error, the error text written by the system or a library is sent as it is. The app removes the message from the handled problems it reports itself, but not from uncaught crashes. In rare cases such text, for example from the embedded Python runtime, might include a file path or the name of a shared file. This only applies after you have allowed collection.</p> <p>Google may see your phone's IP address when the upload happens and may derive an approximate country or region from it. The app itself never reads your location.</p> <p>Data is sent over HTTPS. Retention is set by Google's defaults for Firebase. See <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>What we do not collect</h2>
 <p>We do not collect your files, file names, links, recipient labels, passwords, tunnel token, contacts, photos, location from your device, advertising ID, or any account or personal information. We do not sell data and do not use it for advertising.</p>
 
 <h2>Permissions</h2>
-<p>Internet (tunnel, Firebase, security scan); network and Wi-Fi state (your LAN address and connection type); notifications (the sharing notification); a foreground service of the special-use type with a wake lock (keeps your files reachable while you share, even with the screen off); and a permission to open Android's screen for ignoring battery optimisation, used only when you tap the button for it in Settings. <!-- OPEN: REQUEST_IGNORE_BATTERY_OPTIMIZATIONS may be dropped from the app before release because Play restricts it (sheet section 5); remove this sentence if so. --> No storage, location, contacts, camera or microphone access. None of these send data to the developer.</p>
+<p>Internet (tunnel, Firebase, security scan); network and Wi-Fi state (your LAN address and connection type); notifications (the sharing notification); a foreground service of the special-use type with a wake lock (keeps your files reachable while you share, even with the screen off); and a permission to open Android's screen for ignoring battery optimisation, used only when you tap the button for it in Settings. No storage, location, contacts, camera or microphone access. None of these send data to the developer.</p>
 
 <h2>Your choices and deleting data</h2>
-<p>Turn crash reports and usage statistics off at any time in Settings, Privacy. Revoke a link or change its expiry. Stop the server to stop serving. Choose LAN only to avoid third parties. Delete data on your phone in the app or by uninstalling. We have no account system and no file data, so we cannot look up your data by name. To ask us to delete reports tied to your Firebase installation ID, email us that ID or a description of when a crash happened, and we will delete what we can match.</p> <!-- OPEN: Play Data safety deletion answer ("Yes, by email") is proposed, not yet confirmed by the owner; this section must match the final answer. -->
-
-<h2>Children</h2>
+<p>Turn crash reports and usage statistics off at any time in Settings, Privacy. Revoke a link or change its expiry. Stop the server to stop serving. Choose LAN only to avoid third parties. Delete data on your phone in the app or by uninstalling. We have no account system and no file data, so we cannot look up your data by name. To ask us to delete reports tied to your Firebase installation ID, email us that ID or a description of when a crash happened, and we will delete what we can match.</p> <h2>Children</h2>
 <p>NetShare is a general-purpose tool and is not directed at children.</p>
 
 <h2>Changes</h2>
